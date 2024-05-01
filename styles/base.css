@@ -1,6 +1,5 @@
 body{
         font-family: "Roboto", sans-serif;
-        grid-template: 1fr 1fr 1fr 1fr;
         display: grid;
         max-width: 1200px;
          
