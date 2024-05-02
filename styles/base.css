@@ -4,7 +4,7 @@ body{
    max-width: 1200px;
     
  }
-.h1{
+h1{
 display: block;
 color: #fff;
 padding: 1em;
@@ -46,12 +46,12 @@ nav a:hover{
 border: 10px solid aqua ;
 }
 
-h2 {
+h3 {
 color:white;
 text-align: center;
 }
 
-h3{
+h2{
 text-align: center;
 padding-bottom: 0;
 }
