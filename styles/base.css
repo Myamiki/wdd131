@@ -45,8 +45,7 @@ text-decoration: none;
 nav a:hover{
 border: 10px solid aqua ;
 }
-
-h2 {
+.card-header h2 {
 color:white;
 text-align: center;
 }
