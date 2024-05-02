@@ -4,8 +4,7 @@ body{
    max-width: 1200px;
     
  }
- 
-header h1{
+  .h1{
 display: block;
 color: #fff;
 padding: 1em;
