@@ -45,10 +45,15 @@ text-decoration: none;
 nav a:hover{
 border: 10px solid aqua ;
 }
-.card-header h2 {
+.card-header{
 color:white;
 text-align: center;
+padding: 1px;
+border-top-left-radius: 10px;
+border-top-right-radius: 10px;
+background-color: rgb(9, 93, 93);
 }
+
 
 h3 {
 text-align: center;
@@ -68,17 +73,11 @@ border: 1px solid rgb(9, 9, 70);
 border-radius: 10px;
 }
 
-.card-header {
-padding: 1px;
-border-top-left-radius: 10px;
-border-top-right-radius: 10px;
-background-color: rgb(9, 93, 93);
-}
-
 .card-content {
 padding-left: 15px;
 padding-right: 15px;
 }
+
 .card-content img{
 width: 150px;
 height: auto;
