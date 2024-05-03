@@ -13,9 +13,6 @@ text-align: center;
 margin: 0 auto;
 }  
 
-.change{
-color: yellow;
-}
 header{
 grid-column: 1 / 4 ;
 
