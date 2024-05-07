@@ -1,0 +1,38 @@
+@media screen and (min-width: 800px) {
+.container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 5px;
+    text-align: center;
+    padding: 5px;
+    row-gap: 5px;
+    column-gap: 5px;
+}
+
+	.navigation {
+		display: flex;
+        justify-content: space-between;
+        float: right;
+	}
+
+    nav h1{
+		text-align: left;
+		color: white;
+		float: left;
+		padding: 14px;
+	}
+	
+	.navigation li {
+		display: block; 
+		flex: 1 1 100%;
+	}
+	.navigation a {
+		text-align: center;
+	}
+	#menu {
+		display: none;
+    
+	}
+}
+    
+
