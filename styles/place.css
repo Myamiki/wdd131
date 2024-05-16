@@ -1,6 +1,7 @@
 :root{
-    --background-color:green;
-    --label-color:blue;
+    --background-small: green;
+    --label-color: blue;
+}
 
 body{
     font-family: "Roboto", sans-serif;
