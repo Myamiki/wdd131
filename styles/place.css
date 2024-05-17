@@ -30,31 +30,13 @@ header{
 }
 
 
-li {
-    list-style-type: none;
-}
-a {
-    text-decoration: none; 
-}
-
-footer{
-    display: block;
-    background-color: rgb(9, 91, 9);
-    padding: 35px;
+.data {
+    justify-content: center;
     text-align: center;
-    color: white;
-    border-top: 10px solid red;
+    
 }
 
 
-
-
-
-
-.data,.weather {    
-    background: white;
-    padding: 15px 25px;
-}
 .data h2,.weather h2 {
     background: blue;
     color: white;
@@ -64,23 +46,44 @@ footer{
     border-bottom: black;
 }
 
-.data li
- .weather li {
+.data p,.weather p{
     display: flex;
     flex-direction: row;
+
 }
-.data strong
- .weather strong {
-    display: block;
-    text-align: right;
-    flex: 1 1;
+
+.data {    
+    background: white;
+    padding: 15px 25px;
+    
 }
+.weather{
+    background-color: grey;
+    padding: 10px 5px;
+}
+
+
 .data span
  .weather span {
     display: block;   
     text-align: left;
     padding-left: 20px;
-    flex: 1 1;
+    flex: 1, 1;
+}
+.data h2::before, .weather h2::before {    
+    float: left;
+    content: "";    
+    width: 40px;
+    height: 40px;      
+}
+.data h2::before {
+    position: relative;
+    top:-10px;
+    left:0;
+}
+.weather h2::before {
+    position: relative;
+    top:-25px;
 }
 
 .weather h2 {
@@ -89,62 +92,21 @@ footer{
     align-items: center;
     border-bottom: 5px green;
 }
-     
-
-.data h2::before {
-    position: relative;
-    top:-10px;
-    left:0;
-    float: left;
-    content: "";    
-    width: 40px;
-    height: 40px;   
-}
-.weather h2::before {
-    position: relative;
-    top:-25px;
-    float: left;
-    content: "";    
-    width: 40px;
-    height: 40px;   
-}
-
-
-
-@media only screen and (min-width:756px) {
-    
-    .hero img {          
-        width:100%;      
-        object-fit: cover;
-    }
-    
-    main section {
-        max-width: 1170px;
-        margin: 0 auto;
-        padding: 15px 25px;
-    }
-
     
 
-    .data h2::before, .weather h2::before {          
-        position: absolute;
-        top: -10px; 
-        left: -10px;
-             
+.icon {
+    width: 15%;
+    height: 15%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
     }
 
-    .data {
-        float: left;
-        position: relative;
-        top:-850px;
-        left: 30px;
-        width: 20rem;
-    }
-    .weather {
-        float: right;
-        position: relative;
-        top: -250px;
-        left: -30px;
-        width: 20rem;
-    }
+.footer{
+    display: block;
+    background-color: rgb(9, 91, 9);
+    padding: 35px;
+    text-align: center;
+    color: white;
+    border-top: 10px solid red;
 }
