@@ -1,16 +1,11 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <meta name="description" content="WDD131 - Place Page South Africa.">
-     <meta name="author" content="Prayer Marangwanda">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/place.css">
-    <link rel="stylesheet" href="styles/place-large.css">
     <title>South Africa</title>
+    <link rel="stylesheet" href="styles/place-large.css">
+    <link rel="stylesheet" href="styles/place.css">
 </head>
 <body>
     <header>
@@ -24,23 +19,35 @@
                 <source srcset="images/hero-medium.webp" media="(min-width: 500px)">
                 <img src="images/hero-small.webp" alt="Temple name and location" width="500" height="250"> 
             </picture>
-        </div>
 
-        <div class="data">
-            <h2>Data</h2>
-            <ul id="dataList"></ul>
-        </div>
+</div>
+
+    <section class="data">
+        <h2>Data</h2>
+        <p> <b>Area:</b>   90,410 sq km</p>
+        <p> <b>Population:</b> 89,747,663</p>
+        <p><b>Capital:</b>  Pretoria</p>
+        <p><b>Language:</b>  Tswana</p>
+        <p> <b>Currency:</b> South African Rand</p>
+        <p><b>Time Zone:</b>  SAST</p>
+        <p><b>Calling Code:</b> +27</p>
+        <p><b>Internet TLD: </b> .za</p>
+    </section>
+    <section class="weather">
+        <h2>Weather <img src="images/1530391_weather_clouds_sun_sunny_icon.svg" width="50"></h2>
+        <P> <b>Temperature:</b>  12°C</p>
+        <p> <b>Conditions: </b>  Clear</p>
+        <p> <b>Wind: </b>        5 km/h</p>
+        <p> <b>Wind Chill: </b><span id="windChill"></span></p>
         
-        <div class="weather">
-            <h2>Weather </h2>
-                <img class="icon" scr="images/1530391_weather_clouds_sun_sunny_icon.svg" alt="clouds sunny icon">
-            <ul id="weatherList"></ul>
-        </div>
+    </section>
+</body>
+</html>
     </main>
     <footer>
         <p class="copyright">@ <span id="currentyear"></span>💕 Prayer Marangwanda💕 South Africa </p>
     <p class="lastModified">Last Modification:  <span id="lastModified"></span></p>
 </footer>
-    <script defer="defer" src="scripts/place.js"></script>
+<script defer="defer" src="scripts/place.js"></script>
 </body>
 </html>
