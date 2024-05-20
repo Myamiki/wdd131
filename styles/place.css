@@ -1,6 +1,9 @@
 
-@media only screen and (min-width:756px) {
+@media only screen and (min-width:1000px) {
     
+    .weather h2:first-child::after{
+        content: " ";
+    }
     .hero img {          
         width:100%;      
         object-fit: cover;
@@ -24,14 +27,14 @@
     .data {
         float: left;
         position: relative;
-        top:-850px;
+        top:-1400px;
         left: 30px;
         width: 20rem;
     }
     .weather {
         float: right;
         position: relative;
-        top: -250px;
+        top: -850px;
         left: -30px;
         width: 20rem;
     }
