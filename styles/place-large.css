@@ -38,7 +38,7 @@ header{
 
 
 .data h2,.weather h2 {
-    background: blue;
+    background:var(--label-color:blue);
     color: white;
     text-align: center;
     margin-bottom: 15px;
