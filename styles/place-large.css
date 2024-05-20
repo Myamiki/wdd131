@@ -110,10 +110,9 @@ header{
     }
 
 footer{
-    display: block;
     background-color:var(--background-small);
     text-align: center;
     color: white;
-    padding: 15px 15px;
+    padding: 20px;
 }
 
