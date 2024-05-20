@@ -1,3 +1,4 @@
+
 :root{
     --background-small: green;
     --label-color: blue;
@@ -8,13 +9,13 @@ body{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    background-color:var(--background-small);
+    
   
 }
 
 header{
     display: block;
-    background-color: rgb(9, 91, 9);
+    background-color: var(--background-small);
     text-align: center;
     color:white;
     padding: 35px;
@@ -52,14 +53,21 @@ header{
 
 }
 
-.data {    
-    background: white;
-    padding: 15px 25px;
-    
+.data {
+    background-color: white;
+    justify-content: center;
+    text-align:center;
+    align-items: center;
+    margin: 5px 5px;
+    padding: 10px;
 }
-.weather{
-    background-color: grey;
-    padding: 10px 5px;
+
+.weather {
+    background-color: white;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    margin: 5px 5px;
 }
 
 
@@ -90,11 +98,10 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-bottom: 5px green;
-}
     
+}
 
-.icon {
+.weather img {
     width: 15%;
     height: 15%;
     display: block;
@@ -102,11 +109,11 @@ header{
     margin-right: auto;
     }
 
-.footer{
+footer{
     display: block;
-    background-color: rgb(9, 91, 9);
-    padding: 35px;
+    background-color:var(--background-small);
     text-align: center;
     color: white;
-    border-top: 10px solid red;
+    padding: 15px 15px;
 }
+
