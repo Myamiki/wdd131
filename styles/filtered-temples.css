@@ -1,0 +1,135 @@
+:root{
+    --background-small:rgb(3, 50, 50);
+    --white-color:#ffffff;
+    --label-color: #050540;
+    --bright-color:rgb(230, 230, 238);
+
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+body {
+	font-family: 'Roboto','Jost',sans-serif;
+}
+
+#menu {
+	display: block;
+	font-size: 3rem;
+	font-weight:700;
+	text-decoration: none;
+	padding: .5rem .75rem;
+	background-color: #eee;
+	color: var(--white-color);
+    text-align: right;
+    background-color: var(--background-small);
+
+}
+
+#menu::before {
+	content: "≡";
+}
+
+nav {
+	background-color: var(--background-small);
+    display: inline-block;
+	width: 100%;
+	
+}
+
+.navigation {
+	list-style: none;
+	margin: 0 auto;
+	width: 50%;
+	
+}
+
+nav h1{
+    text-align: left;
+    color: var(--white-color);
+	float: left;
+	padding: 0 14px 14px 14px;
+    font-size: 40px;
+}
+
+.navigation li {
+	display: none;
+    text-align: right;
+}
+
+.navigation a {
+	display: block;
+	padding: 20px;
+	text-align: center;
+	text-decoration: none;
+    font-weight: 500;
+	color: var(--white-color);
+	transition: 0.1s;
+}
+
+.navigation a:hover,.navigation a:active {
+	color:var(--white-color);
+	background-color: var(--label-color);
+}
+
+.show li {
+	display: block;
+}
+
+#menu.show::before {
+	content: "X";
+}
+
+h2{
+    text-align: center;
+    color: rgb(24, 2, 2);
+    padding: 10px;
+    font-weight: 50px;
+}
+
+
+.container{
+    display: grid;
+    justify-content: space-between;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	margin: 5px;
+    text-align: center;
+    padding: 5px;
+    row-gap: 5px;
+    column-gap: 5px;
+    
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid var(--bright-color);
+    margin-bottom: 20px;
+    padding: 10px 25px;
+    background-color: var(--bright-color);
+
+}
+
+section img {
+    object-fit: cover;
+    box-shadow: 0 0 10px 5px grey;
+    
+}
+section h3, section a, section p {
+    text-align: center;
+    padding: 5px;
+}
+.label {
+    font-weight: bold;
+    color: rgb(5, 101, 5);
+}
+
+
+footer{
+    color: var(--white-color);
+    background-color: var(--background-small);
+    padding: 20px;
+    text-align: center;
+}
