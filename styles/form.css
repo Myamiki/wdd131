@@ -57,6 +57,7 @@ form{
 }
 
 #products{
+    display:block;
     font-size: large;
     padding: 5px 8.5rem;
     background-color: var(--white-color);
@@ -64,6 +65,7 @@ form{
 }
 
 #giveIn{
+    display:block;
     padding: 5px 9rem;
     text-align: center;
     font-weight: bold;
