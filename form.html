@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>>Review Form</title>
+    <meta name="description" content="Create product review form page.">
+     <meta name="author" content="Prayer Marangwanda">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/form-large.css">
+</head>
+<body>
+<header>
+    <h1>Product Review</h1>
+</header><br><br>
+<main>
+    <form method="get" action="review.html">
+     <p>Product Name</p>
+    <select name="products" id="products">
+    <option value="selectaProduct">Select a Product...</option>
+    <option value=""></option><br><br>
+     </select>
+
+<!--ovarall rating-->
+      <p>Overall Rating</p>
+     <div class="stars">
+        <label>
+            
+            <input type="radio" id="rating1" name="productRating" value="1" required="">
+            ★
+        </label>
+    
+        <label>
+            <input type="radio" id="rating2" name="productRating" value="2" required="">
+            ★★
+        </label>
+        <label>
+            <input type="radio" id="rating3" name="productRating" value="3" required="">
+            ★★★
+        </label>
+        <label>
+            <input type="radio" id="rating4" name="productRating" value="4" required="">
+            ★★★★
+            </label>
+        
+        <label>
+            <input type="radio" id="rating5" name="productRating" value="5" required="">
+            ★★★★★
+            
+        </label><br>
+     </div>
+
+<!--date of installion-->
+     <p>Date of Installation</p>
+     <input type="date" id="dates" name="dates" value="mm/dd/yyyy"/><br><br>
+
+<!--useful features-->     
+     <p>Which features did you find useful in the product?</p>
+     <p class="change">(check all that apply)</p>
+     <input type="checkbox" id="lasting" name="lasting" value="">
+     <label for="feature1">Durability </label><br>
+
+     <input type="checkbox" id="usability" name="usability" value="">
+     <label for="feature2">Ease of Use </label><br>
+
+     <input type="checkbox" id="show" name="show" value="">
+     <label for="feature3">Performance </label><br>
+
+     <input type="checkbox" id="plan" name="plan" value="">
+     <label for="feature4">Design </label><br><br>
+
+
+    <p>Written Review <span class="chang">(Optional)</span></p>
+    <textarea name="review" id="reviews"></textarea><br><br>
+     
+    <p>Your Name <span class="chang">(Optional)</span></p>
+    <input type="text" id="sms" name="sms" value=""><br><br>
+
+    <input type="submit" id="giveIn" name="giveIn" value="Post Review">
+
+  </form>
+</main>
+
+<footer>
+    <p class="copyright">@ <span id="currentyear"></span>💕 Prayer Marangwanda💕 South Africa </p>
+    <p class="lastModified">Last Modification:  <span id="lastModified"></span></p>
+</footer>
+<script defer="defer" src="scripts/form.js"></script> 
+</body>
+</html>
