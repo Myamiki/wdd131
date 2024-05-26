@@ -55,5 +55,30 @@ const products = [
     });
 
     
+    //JavaScript code to handle date formatting and validation
+  document.addEventListener("DOMContentLoaded", function() {
+    var dateInput = document.getElementById('date');
+
+    // Add event listener to validate date input
+    dateInput.addEventListener('input', function(event) {
+      var inputDate = event.target.value;
+      var isValidDate = isValidDateFormat(inputDate);
+
+      if (!isValidDate) {
+        alert('Please enter a valid date in the format YYYY-MM-DD.');
+        event.target.value = ''; // Clear the input field
+      }
+    });
+
+    // Function to check if date is in the format YYYY-MM-DD
+    function isValidDateFormat(dateString) {
+      var regex = /^\d{4}-\d{2}-\d{2}$/;
+      return regex.test(dateString);
+    }
+  });
+
+
+
+
 
 
