@@ -47,6 +47,7 @@ p{
     font-family:italic;
     font-weight:  lighter;
     color: blue;
+    margin-top:0;
 }
 
 form{
@@ -82,7 +83,7 @@ form{
     padding: 5px 7.5rem;
 }
 .chang{
-    margin-top:0;
+
     color: blue;
     font-size: 12px;
 }
