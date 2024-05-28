@@ -58,11 +58,11 @@ h2{
 .wireframes h2{
     text-align: center;
 }
-
+    
     .my-button {
         background-color:palegreen; 
         border: none;
-        color: white;
+        color: palegreen;
         padding: 15px 32px;
         text-align: center;
         text-decoration: none;
@@ -76,15 +76,13 @@ h2{
       .my-button:hover {
         background-color: rgb(87, 87, 231); 
       }
-      a{
+      .my-button li a{
         text-decoration: none;
         color: #000000;
         font-weight: bolder;
         font-family: 'Jost';
       }
       
-
-
 h4{
     text-align: center;
 }
