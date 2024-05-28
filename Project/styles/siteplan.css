@@ -62,7 +62,6 @@ h2{
     .my-button {
         background-color:palegreen; 
         border: none;
-        color: palegreen;
         padding: 15px 32px;
         text-align: center;
         text-decoration: none;
@@ -76,6 +75,12 @@ h2{
       .my-button:hover {
         background-color: rgb(87, 87, 231); 
       }
+
+      
+      .my-button li{
+        list-style-type: none;
+      }
+
       .my-button li a{
         text-decoration: none;
         color: #000000;
