@@ -1,23 +1,30 @@
-<DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Review Form</title>
-    <meta name="description" content="Create product review form page..">
+    <title>Review</title>
+    <meta name="description" content="Review page.">
      <meta name="author" content="Prayer Marangwanda">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/form.css">
+    <link rel="stylesheet" href="styles/form-large.css">
 </head>
 <body>
-    
-    <h1>Review Form</h1>
-    <form id="reviewForm">
-        <!-- My form fields goes here -->
-        <button type="submit">Submit Review</button>
-    </form>
+<header>
+    <h1>Review Confirmation</h1>
+</header><br><br>
+<main>
+    <p>Review received!</p>
+    <p>Number of reviews: <span id="reviewCounter"></span></p>
+</main>
 
+<footer>
+    <p class="copyright">@ <span id="currentyear"></span>💕 Prayer Marangwanda💕 South Africa </p>
+    <p class="lastModified">Last Modification:  <span id="lastModified"></span></p>
+</footer>
+<script defer="defer" src="scripts/form.js"></script> 
 </body>
 </html>
