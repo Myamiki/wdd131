@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>>Review Form</title>
+    <title>Review Form</title>
     <meta name="description" content="Create product review form page.">
      <meta name="author" content="Prayer Marangwanda">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,11 +17,11 @@
     <h1>Product Review</h1>
 </header><br><br>
 <main>
-    <form method="get" action="review.html">
+    <form method="get" onsubmit="myFunction()" action="review.html" id="reviewForm">
      <p>Product Name</p>
-    <select name="products" id="products">
-    <option value="selectaProduct">Select a Product...</option>
-     </select>
+    <select name="products" id="products" required>
+        <option disabled selected>Select a Product...</option>
+    </select>
 
 <!--ovarall rating-->
       <p>Overall Rating</p>
@@ -54,26 +54,26 @@
 
 <!--date of installion-->
      <p>Date of Installation</p>
-     <input type="date" id="date" name="date">
+     <input type="date" id="date" name="date" required>
  <br>
     <br>
 <!--useful features-->     
      <p>Which features did you find useful in the product?</p>
      <p class="change">(check all that apply)</p>
-     <input type="checkbox" id="lasting" name="lasting" value="">
-     <label for="lasting">Durability </label>
+     <input type="checkbox" id="durability" name="durability" value="durability">
+     <label for="durability">Durability </label>
         <br>
 
-     <input type="checkbox" id="usability" name="usability" value="">
+     <input type="checkbox" id="usability" name="usability" value="usability">
      <label for="usability">Ease of Use </label>
         <br>
 
-     <input type="checkbox" id="show" name="show" value="">
-     <label for="show">Performance </label>
+     <input type="checkbox" id="performance" name="performance" value="performance">
+     <label for="performance">Performance </label>
         <br>
 
-     <input type="checkbox" id="plan" name="plan" value="">
-     <label for="plan">Design </label>
+     <input type="checkbox" id="design" name="design" value="design">
+     <label for="design">Design </label>
         <br>
 
 
@@ -82,7 +82,7 @@
         <br>
      
     <p>Your Name <span class="chang">(Optional)</span></p>
-    <input type="text" id="sms" name="sms" value="">
+    <input type="text" id="name" name="name">
         <br>
         <br>
 
