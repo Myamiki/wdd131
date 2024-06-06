@@ -1,0 +1,93 @@
+@media screen and (max-width:800px){
+    main{
+        display: grid;
+        text-align: left;
+        background-color: lightcyan;
+        margin: 0 0;
+        
+    }
+
+header{
+    text-align: left;
+    margin-bottom: 0;
+}
+
+footer{
+    text-align: left;
+}
+    
+
+
+.productz,
+.contact,
+.main-container,
+    .container{
+        display: grid;
+        justify-content: space-between;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        margin: 5px;
+        text-align: center;
+        padding: 5px;
+        row-gap: 5px;
+        column-gap: 5px;
+    }
+
+    .title,
+    .strongs p,
+    .strongs img,
+    .containing{
+        align-items: left;
+        text-align: left;
+        margin-left: 50px;
+        padding: 0px;
+        
+    } .strongs img{
+        width: 400px;
+        
+    }
+    .containing{
+        display: grid;
+    }
+
+
+
+    nav h1{
+		text-align: left;
+		color: white;
+		float: left;
+		padding: 0;
+        margin: 0;
+	}
+	.navbar {
+        background-color: var(--background-small);
+        display: inline-block;
+        width: 100%;
+        
+    }
+	
+	
+.navbar {
+	display: block;
+	font-size: 3rem;
+	font-weight:700;
+	text-decoration: none;
+	padding: .5rem .75rem;
+	background-color: #eee;
+	color: var(--white-color);
+    text-align: right;
+    background-color: var(--background-small);
+
+}
+    .navbar::before {
+        content: "≡";
+    }
+    
+    
+.navbar.show::before {
+	content: "X";
+
+	}
+    .show li {
+        display: block;
+    }
+}
